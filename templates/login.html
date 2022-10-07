@@ -1,0 +1,13 @@
+{% extends "exxen.html" %}
+{% load static %}
+{% block content %}
+  <div class="container">
+    <form action="" method="POST"  class="w-50 m-auto border p-4 text-light mt-5">
+    {% csrf_token %}
+    <input type="text" name="kullanici" id="" class="form-control">
+    <input type="password" name="sifre" id="" class="form-control mt-3">
+    <input type="submit" value="Giriş" class="btn btn-primary mt-2">
+    </form>
+  </div>
+
+{% endblock content %}
